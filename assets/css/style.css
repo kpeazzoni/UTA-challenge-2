@@ -6,7 +6,6 @@
   }
   * {
     max: width 1920px;
-    font-family: Arial, Helvetica, sans-serif;
   }
   body {
     display: flex;
@@ -25,7 +24,8 @@
   h1 {
     font-size: 300%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: (--light)
+    color: var(--light);
+    margin-left: 20px;
 
   }
   
@@ -75,18 +75,56 @@ figcaption {
         font-size: 400%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: var(--light);
-        margin: 50px 0px 0px 300px;
+        margin: 20px 0px 0px 250px;
   }
   .vl {
     border-right: 
     height: 500px;
   } 
-    .vl {
-        border-right: 6px solid var(--dark);
-        height: 170px;
-        margin-right: 1300px;
+    .about-container {
+        height: 300px;
     }
-    p {
-        margin-left:550px;
-        
+    .about-me-wrapper {
+        border-right: 7px solid var(--dark);
+        height: 250px;
+        float:left;
+        width:25%;
+        margin-top: 55px;
     }
+    .about-paragraph {
+       float:right;
+       width: 70%;
+       margin-right: 20px;
+       margin-top: 55px;
+    }
+    .work-container {
+        height: 300px;
+    }
+    .work-wrapper {
+        border-right: 7px solid var(--dark);
+        height: 700px;
+        float:left;
+        width:25%;
+        /* margin-top: 55px; */
+    }
+    .work-paragraph {
+       display: flex;
+       flex-wrap:wrap;
+       justify-content:space-evenly;
+       float:right;
+       width: 70%;
+       margin-right: 20px;
+       /* margin-top: 55px; */
+    }
+    .work-images1 {
+       border: 6px solid var(--dark);
+       margin-top: 2%;
+    }
+    .work-images2{
+        width: 45%;
+        margin-top: 1%;
+        border: 6px solid var(--dark);
+        /* align-content:space-around; */
+        /* align-content: flex-start; */
+    }
+   

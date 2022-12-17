@@ -1,10 +1,12 @@
 :root {
-    --dark: #13293d;
-    --light: rgb(192, 147, 14);
-    --navlink-color: #a96f0b;
+    --dark: #032f58;
+    --light: rgb(219, 114, 10);
+    --medium: rgb(142, 54, 4); 
+    --navlink-color:rgb(219, 114, 10);
   }
   * {
     max: width 1920px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   body {
     display: flex;
@@ -21,8 +23,10 @@
     color: var(--light);
   }
   h1 {
-    font-size: 200%;
+    font-size: 300%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: (--light)
+
   }
   
   nav ul {
@@ -42,24 +46,29 @@
   }
   
   nav a:hover {
-    color: var(--light);
+    color: white;
+    text-shadow: 2px 2px 8px var(--light);
   }
 
 img {
     /* position:relative; */
     margin-top: -5px;
-    margin-left: -36px;
+    /* margin-left: -5px; */
     justify-content: safe;
-    max-width: 102%;
+    max-width: 140%;
 }
 figcaption {
-    background-color: var(--dark);
-    color: white;
-    font-style: italic;
-    padding: 2px;
+    background-color: rgb(248, 245, 242, 0.4);
+    color: var(--dark);
+    font-style: bold;
+    border-radius: 4px;
+    padding: 7px;
     font-size: 35px;
     margin-left: 1350px;
-    max-width:fit-content
+    margin-top: -70px;
+    max-width:fit-content;
+    z-index:100;
+    position:relative;
 }
   h2 {
         margin: 2% 0;
@@ -76,4 +85,8 @@ figcaption {
         border-right: 6px solid var(--dark);
         height: 170px;
         margin-right: 1300px;
+    }
+    p {
+        margin-left:550px;
+        
     }

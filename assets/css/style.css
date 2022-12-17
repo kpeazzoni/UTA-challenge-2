@@ -44,7 +44,7 @@
   }
 
 img {
-    position:relative;
+    /* position:relative; */
     margin-top: -20px;
     margin-left: -36px;
     justify-content: safe;

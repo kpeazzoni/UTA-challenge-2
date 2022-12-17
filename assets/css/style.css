@@ -1,9 +1,7 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
 :root {
-    /* declare a variable with `--` syntax */
     --dark: #13293d;
-    --light: #fff;
-    --navlink-color: #b9c6ae;
+    --light: rgb(192, 147, 14);
+    --navlink-color: #a96f0b;
   }
   
   body {
@@ -17,81 +15,52 @@
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    /* use CSS var() function to reference a variable created above */
     background-color: var(--dark);
     color: var(--light);
   }
-  
   h1 {
     font-size: 200%;
-  }
-  
-  h2 {
-    margin: 2% 0;
-    font-size: 250%;
-  }
-  
-  a[href*='.css']::after {
-    content: '📝';
-    display: inline-block;
-    margin-left: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
+    min-height: 50px;
+    text-align: center;
   }
   
   nav a {
-    background-color: unset;
-    color: var(--navlink-color);
-    font-weight: bold;
-    text-decoration: none;
+   color: var(--navlink-color);
+   font-weight: bold;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 20px;
+   text-align: right;
   }
   
   nav a:hover {
     color: var(--light);
   }
-  
-  main {
-    display: flex;
-    flex: 1 1 0;
-    max-width: 96%;
-    margin: 2% auto;
-  }
-  
-  article {
-    /* If we were to change the value of `--dark`, then all references to it would change automatically */
-    border-bottom: 1px solid var(--dark);
-  }
-  
-  article p {
-    margin: 2% 0;
-    font-size: 110%;
-  }
-  
-  article ul {
-    margin-left: 5%;
-    font-size: 110%;
-    list-style: circle;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 2%;
+
+img {
+    position:relative;
+    margin-top: -36px;
+    margin-left: -36px;
+    justify-content: safe;
+}
+figcaption {
     background-color: var(--dark);
-    color: var(--light);
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    font-size: 35px;
+    margin-left: 1350px;
+    max-width:fit-content
+}
+  h2 {
+    margin: 2% 0;
+    font-size: 250%;
   }
   
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  
-    main {
-      max-width: 1200px;
-    }
-  }
   

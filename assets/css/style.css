@@ -110,7 +110,8 @@ figcaption {
         /* margin-top: 55px; */
     }
     .work-images1:hover, .work-images2:hover {
-        box-shadow: inset 0px 0px 8px var(--dark), 0 0 15px var(--lighterblue)
+        box-shadow: inset 0px 0px 10px white, 0 0 15px var(--dark)
+    
     }
     .work-paragraph {
        display: flex;
@@ -124,6 +125,7 @@ figcaption {
     .work-images1 {
        border: 6px solid var(--dark);
        margin-top: 2%;
+       opacity: ;
     }
     .work-images2{
         width: 45%;
@@ -132,4 +134,31 @@ figcaption {
         /* align-content:space-around; */
         /* align-content: flex-start; */
     }
-   
+    .contact-container {
+        height: 200px;
+        /* float: left */
+    }
+    .contact-wrapper {
+        border-right: 7px solid var(--dark);
+        height: 200px;
+        float:left;
+        width:25%;
+        margin: 40px 900px 0px 0px;
+    }
+    h3 {
+        /* margin: 2% 0; */
+        font-size: 400%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: var(--light);
+        margin: 40px 0px 0px 200px;
+        float: left;
+  }
+    .contact-list {
+        /* display: inline; */
+       flex-direction: row;
+       display: flex;
+       flex-wrap:wrap;
+       justify-content:space-evenly;
+       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+    }

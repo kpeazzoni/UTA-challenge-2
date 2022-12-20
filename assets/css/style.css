@@ -80,6 +80,8 @@ figcaption {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: var(--light);
         margin: 20px 0px 0px 250px;
+        text-align: right;
+        padding:5%;
   }
   .vl {
     border-right: 
@@ -94,6 +96,7 @@ figcaption {
         float:left;
         width:25%;
         margin-top: 55px;
+        
     }
     .about-paragraph {
        float:right;
@@ -153,8 +156,10 @@ figcaption {
         font-size: 400%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: var(--light);
-        margin: 40px 0px 0px 200px;
+        margin: 0px 0px 0px 200px;
         float: left;
+        text-align: right;
+        padding:5%;
   }
     .contact-list {
        /* display: inline; */
@@ -163,14 +168,13 @@ figcaption {
        /* flex-wrap:wrap; */
        /* align-items:left; */
        /* margin-bottom: 5px;*/
+       display: flex;
+       width: 50%;
        margin-top: -140px;
-       margin-left: 500px;
-       justify-content:space-evenly;
+       margin-left: 650px;
+       justify-content:space-between;
        float:left;
-       align-content: center;
-       padding: 15px;
        font-size: 50px;
-       color: var(--navlink-color);
        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     }
     .contact-list a {

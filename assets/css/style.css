@@ -192,6 +192,8 @@ figcaption {
     font-size: 35px;
     margin-right: 2300px;
     max-width: fit-content;
+    position:relative;
+    margin-bottom: 10px;
     z-index:100;
     
   }

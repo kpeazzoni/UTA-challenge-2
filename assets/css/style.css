@@ -7,6 +7,7 @@
   }
   * {
     max: width 1920px;
+    box-sizing:border-box;
   }
   body {
     display: flex;
@@ -68,27 +69,28 @@ figcaption {
     border-radius: 4px;
     padding: 7px;
     font-size: 35px;
-    margin-left: 1350px;
     margin-top: -70px;
     max-width:fit-content;
     z-index:100;
     position:relative;
+    float: right;
 }
   h2 {
         margin: 2% 0;
         font-size: 400%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: var(--light);
-        margin: 20px 0px 0px 250px;
+        margin: 20px 0px 0px 10%;
         text-align: right;
         padding:5%;
   }
   .vl {
-    border-right: 
+    border-right:0px; 
     height: 500px;
   } 
     .about-container {
         height: 300px;
+        /* box-sizing: 25%; */
     }
     .about-me-wrapper {
         border-right: 7px solid var(--dark);
@@ -96,6 +98,7 @@ figcaption {
         float:left;
         width:25%;
         margin-top: 55px;
+        /* box-sizing: 75%; */
         
     }
     .about-paragraph {
@@ -112,8 +115,7 @@ figcaption {
         height: 700px;
         float:left;
         width:25%;
-        /* transition: all 0.5s ease-in-out; */
-        /* margin-top: 55px; */
+    
     }
     .work-images1:hover, .work-images2:hover {
         box-shadow: inset 0px 0px 10px white, 0 0 15px var(--dark)
@@ -131,12 +133,14 @@ figcaption {
     .work-images1 {
        border: 6px solid var(--dark);
        margin-top: 2%;
-       opacity: ;
+       width:100%;
+       
     }
     .work-images2{
         width: 45%;
         margin-top: 1%;
         border: 6px solid var(--dark);
+        z-index:90;
         /* align-content:space-around; */
         /* align-content: flex-start; */
     }
@@ -148,18 +152,20 @@ figcaption {
         border-right: 7px solid var(--dark);
         height: 200px;
         float:left;
-        width:25%;
-        margin: 40px 900px 0px 0px;
+        margin-top: 3%;
+        margin-right: 45%;
+        margin-left: -4.5%;
     }
     h3 {
         /* margin: 2% 0; */
         font-size: 400%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: var(--light);
-        margin: 0px 0px 0px 200px;
+        margin: 0px -120px 0px 0;
         float: left;
         text-align: right;
-        padding:5%;
+        margin-left:-183%;
+        padding: 5%;
   }
     .contact-list {
        /* display: inline; */
@@ -169,13 +175,18 @@ figcaption {
        /* align-items:left; */
        /* margin-bottom: 5px;*/
        display: flex;
-       width: 50%;
-       margin-top: -140px;
-       margin-left: 650px;
+       width: 60%;
        justify-content:space-between;
-       float:left;
+       float:right;
        font-size: 50px;
+       margin-right: 9%;
+       margin-top: -9%;
        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    }
+
+    #contact {
+      height: 200px;
+      width:100%;
     }
     .contact-list a {
       color:var(--dark);
@@ -190,10 +201,47 @@ figcaption {
     font-style: bold;
     border-radius: 4px;
     font-size: 35px;
-    margin-right: 2300px;
+    margin-right: 80%;
     max-width: fit-content;
     position:relative;
     margin-bottom: 10px;
+    width: 100%;
     z-index:100;
-    
   }
+  /* #homework2 {
+    background-color: rgb(248, 245, 242, 0.4);
+    color: var(--dark);
+    font-style: bold;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-right: 2000px;
+    max-width: fit-content;
+    max-height:fit-content;
+    position:relative;
+    margin-bottom: 8px;
+    z-index:100;
+  } */
+
+@media only screen and (min-width: 768px) {
+  header, nav, .banner {
+    display:flex;
+    flex-direction: row;
+}
+}
+/* @media screen and (max-width: 768px) {
+  #about-container,
+  nav , section {
+    flex-direction: column;
+  }
+} */
+
+  /* @media screen and (min-width: 992px) {
+   header {
+      width: 75%;
+    }
+  
+    body{
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }  */

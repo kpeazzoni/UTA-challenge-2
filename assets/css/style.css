@@ -22,7 +22,22 @@
     padding: 1%;
     background-color: var(--dark);
     color: var(--light);
+    width: auto;
   }
+  .profile-pic {
+    height: 250px;
+    width: 100%;
+    /* padding-top: 10.4%; */
+    margin-right: 40%;
+    background-image: url("../Images/2022_0802_StaffPhotos-4260\ 2022-09-05\ 16_41_11.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 5px;
+    width: 150px;
+  }
+
   h1 {
     font-size: 300%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -49,7 +64,7 @@
    /* dispay: inline; */
    padding: 5px 10px;
   }
-  
+
   nav a:hover {
     color: white;
     text-shadow: 2px 2px 8px var(--light);
@@ -57,10 +72,11 @@
 
 img {
     /* position:relative; */
-    margin-top: -5px;
+    margin-top: -2px;
     /* margin-left: -5px; */
     justify-content: safe;
-    max-width: 140%;
+    max-width: 100%;
+    display: flex;
 }
 figcaption {
     background-color: rgb(248, 245, 242, 0.4);
@@ -69,7 +85,7 @@ figcaption {
     border-radius: 4px;
     padding: 7px;
     font-size: 35px;
-    margin-top: -70px;
+    margin-top: -90px;
     max-width:fit-content;
     z-index:100;
     position:relative;
@@ -204,7 +220,7 @@ figcaption {
     margin-right: 80%;
     max-width: fit-content;
     position:relative;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     width: 100%;
     z-index:100;
   }

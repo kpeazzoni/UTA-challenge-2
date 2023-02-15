@@ -146,7 +146,8 @@ h2 {
 }
 
 .work-images1:hover,
-.work-images2:hover {
+.find-my-ride:hover,
+.timed-quiz:hover {
   box-shadow: inset 0px 0px 10px white, 0 0 15px var(--dark)
 }
 
@@ -167,13 +168,16 @@ h2 {
 
 }
 
-.work-images2 {
-  width: 45%;
-  margin-top: 1%;
+.find-my-ride,
+.timed-quiz {
+  width: 55%;
+flex-wrap: wrap;
+margin-left: 20%;
+margin-top: 1%;
   border: 6px solid var(--dark);
   z-index: 90;
-  /* align-content:space-around; */
-  /* align-content: flex-start; */
+  align-content:space-around;
+  align-content: flex-start;
 }
 
 .contact-container {

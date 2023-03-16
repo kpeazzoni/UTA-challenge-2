@@ -139,7 +139,7 @@ h2 {
 
 .work-wrapper {
   border-right: 7px solid var(--dark);
-  height: 1000px;
+  height: 1600px;
   float: left;
   width: 25%;
 
@@ -147,7 +147,8 @@ h2 {
 
 .work-images1:hover,
 .find-my-ride:hover,
-.timed-quiz:hover {
+.timed-quiz:hover,
+.plan-tracker:hover {
   box-shadow: inset 0px 0px 10px white, 0 0 15px var(--dark)
 }
 
@@ -161,35 +162,56 @@ h2 {
   /* margin-top: 55px; */
 }
 
-.work-images1 {
+.work-images1, .plan-tracker {
   border: 6px solid var(--dark);
   margin-top: 2%;
   width: 100%;
+}
+/* .plan-tracker {
+width: 50%;
+height: 60%;
+border: 6px solid var(--dark);
+margin-top: 2%;
+margin-left: 23%;
+justify-content: center;
+} */
 
+.find-my-ride {
+  width: 50%;
+  height: 140%;
+flex-wrap: wrap;
+margin-left: -10%;
+margin: auto%;
+  border: 6px solid var(--dark);
+  /* z-index: 10; */
+  align-content:space-around;
+  /* align-content: flex-start; */
 }
 
-.find-my-ride,
 .timed-quiz {
-  width: 55%;
+  width: 50%;
+  height: 100%
 flex-wrap: wrap;
-margin-left: 20%;
-margin-top: 1%;
+margin-left: 60%;
+margin-top: -15%;
   border: 6px solid var(--dark);
-  z-index: 90;
+  z-index: 10;
   align-content:space-around;
-  align-content: flex-start;
+  /* align-content: flex-start; */
 }
 
 .contact-container {
-  height: 100px;
-  /* float: left */
+ /* height: 100px; */
+ margin-left: 25%;
+z-index: 100;
+ display: block;
 }
 
 .contact-wrapper {
   /* border-right: 7px solid var(--dark); */
   /* height: 200px; */
   float: left;
-  margin-top: 3%;
+  margin-top: 0%;
   margin-right: 45%;
   margin-left: -4.5%;
 }
@@ -206,6 +228,10 @@ h3 {
   padding: 5%;
 }
 
+h4 {
+font-size: 120%;
+}
+
 .contact-list {
   /* display: inline; */
   /* flex-direction: row; */
@@ -216,15 +242,15 @@ h3 {
   display: flex;
   width: 60%;
   justify-content: space-between;
-  float: right;
+  /* float: right; */
   font-size: 50px;
-  margin-right: 9%;
-  margin-top: -9%;
+  margin-left: 20%;
+  margin-top: -40%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #contact {
-  height: 200px;
+  height: 20px;
   width: 100%;
 }
 
